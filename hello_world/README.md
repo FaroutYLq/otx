@@ -16,6 +16,11 @@ executable = 01hello.sh
 ```
 This is the actual executable that will be run on the job. Typically this will be a simple bash script that sets up the environment and then maybe runs something else, but it could also be an executable python script; however, one needs to remember that this job will be running on another machine and thus won't have access to a local python interpreter. It's recommended to have this executable be a bash script. 
 
+```
+universe = vanilla
+```
+A universe in HTCondor defines an execution environment for a job. The universe under which a job runs is specified in the submit description file. If a universe is not specified, the default is vanilla. For more information, please go [here](https://htcondor.readthedocs.io/en/latest/users-manual/choosing-an-htcondor-universe.html#vanilla-universe).
+
 Anyway, you will see that `01hello.sh` is just a simple jobs prints "Hello World" to standard output. If you want, try running this bash script in your local terminal (if you do this remember to make sure it's executable first, with `chmod +x 01hello.sh`). Now back to the submit script...
 
 Also included in the submit script are lines for the error/output/logs which you can see we point to the local `logs` directory. The `Error` log file will contain stderr, `Output` will contain stdout, and `Log` contains metadata about the job, like when/where it is running, resource usage, etc.
