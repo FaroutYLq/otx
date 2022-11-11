@@ -6,7 +6,7 @@ Contensts are built on the combination of [Evan's OSG tutorial](https://github.c
 
 To use OSG you need to have access to a submit node that has access to the grid. For XENON we have our own dedicated login node.
 
-First you need to get an account, see wiki or go straight to CI-Connect site here. Make sure to ask to join the xenon1t group when requesting your account.
+First you need to get an account, see [wiki](https://xe1t-wiki.lngs.infn.it/doku.php?id=xenon:xenon1t:cmp:computing:midway_cluster:instructions) or go straight to CI-Connect site [here](https://www.ci-connect.net). Make sure to ask to join the xenon1t group when requesting your account.
 
 After setting up your account, you will need to add an ssh key to your profile to be able to login.
 
