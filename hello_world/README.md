@@ -116,7 +116,7 @@ arguments = $(Process)
 queue 10
 ```
 
-The `queue 10` line means we are going to submit 10 jobs instead of one, and the `$(Process)` variable is a placeholder for the index of the corresponding job that is running. That is, we will submit 10 jobs which have corresponding `$(Process)` variables ranging between 0--9. To differentiate the different error/output/log files of the jobs, you can see that we also pass `$(Process)` there.
+The `queue 10` line means we are going to submit 10 jobs instead of one, and the `$(Process)` variable is a placeholder for the index of the corresponding job that is running. That is, we will submit 10 jobs which have corresponding `$(Process)` variables ranging between 0--9. To differentiate the different error/output/log files of the jobs, you can see that we also pass `$(Process)` there. This method should be useful for people doing a lot of simulation.
 
 When you submit this job, you should see:
 ```
