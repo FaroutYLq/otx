@@ -7,7 +7,7 @@ For more information, see the HTCondor docs [here](https://htcondor.readthedocs.
 Below we go through 2 example workflows, the first of which is a simple Hello World job and the second involves multiple jobs with slightly different arguments passed as input.
 
 ## 1. Hello, it's me
-##### Overview of submit script and executable
+### Overview of submit script and executable
 The first job we look at is `submit_01hello.sub`. This is a Condor _submit script_, analogous to SLURM's `.sbatch` scripts we use on, e.g. the Midway cluster at UChicago. Before submitting, take a look inside. 
 
 The first line in the submit file is 
@@ -29,7 +29,7 @@ You then see lines for requesting resources like memory, # cpus, and disk space,
 
 The last line just says `queue`, which is the command to tell condor to submit the job. As we will see, we can submit multiple jobs by
 
-##### Submitting the job
+### Submitting the job
 After understanding what the job does, we are ready to submit it to the grid. The command (and expected output )is 
 
 ```
@@ -38,7 +38,7 @@ Submitting job(s).
 1 job(s) submitted to cluster 3578993.
 ```
 
-##### Job Status
+### Job Status
 To check the status of the job, do
 
 ```
@@ -56,7 +56,7 @@ TODO: using `-analyze` and `-better-analyze` to check on jobs.
 
 You can also get some information on the job by looking at the `Log` file specified in the submit script.
 
-##### Job Completion
+### Job Completion
 When the job finishes (regardless of whether it was successful or not), the error/output is copied to the specified location from the submit script.
 
 To see the output of our script run on the grid, see 
