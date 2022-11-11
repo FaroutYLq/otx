@@ -52,7 +52,7 @@ ershockley ID: 3578994   7/21 16:03      _      _      1      1 3578994.0
 
 where you can see that I have one job in the `IDLE` state. This just means it hasn't started running yet; when it starts running the will instead be a `1` under the `RUN` column. Sometimes it take a bit for the job to start running, as condor needs to search for machines all over the world for openings to run our job.
 
-TODO: using `-analyze` and `-better-analyze` to check on jobs. 
+You can try `condor_q -analyze JOBID` and `condor_q -better-analyze JOBID` to check on jobs. For more useful arguements, you can refer to [this page](https://chtc.cs.wisc.edu/uw-research-computing/condor_q.html) or just type `condor_q --help`.
 
 You can also get some information on the job by looking at the `Log` file specified in the submit script.
 
