@@ -1,0 +1,18 @@
+#!/bin/bash
+
+
+executable = 02count.sh
+universe = vanilla
+Error  = logs/03multiple.$(Process).err
+Output = logs/03multiple.$(Process).out
+Log    = logs/03multiple.$(Process).log
+
+request_cpus = 1
+request_memory = 1000MB
+request_disk = 100MB
++WANT_RCC_ciconnect = True
++ProjectName = "xenon1t"
++AccountingGroup = "group_opportunistic.xenon1t.processing"
+arguments = $(Process)
+
+queue 10
