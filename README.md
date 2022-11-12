@@ -1,5 +1,6 @@
 # otx
-OTX: OSG Tutorial for XENON
+OTX: OSG Tutorial for XENON.
+
 Contensts are built on the combination of [Evan's OSG tutorial](https://github.com/ershockley/osg_tutorial), [Evan's outsource](https://github.com/ershockley/osg_tutorial), [Evan's MC chain](https://github.com/XENONnT/mc_chain/blob/master/mc_chain.py).
 ## Accounts and Logging in
 
